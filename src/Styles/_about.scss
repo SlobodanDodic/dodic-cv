@@ -1,0 +1,87 @@
+@import "_vars.scss";
+
+.about {
+  height: 100vh;
+  img {
+    width: 41vh;
+    margin: 2% auto;
+    display: block;
+  }
+}
+
+.alice-carousel {
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+}
+.alice-carousel__dots {
+  margin: 0px;
+}
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  padding: 0px;
+}
+.alice-carousel__dots-item:not(.__custom):not(:last-child) {
+  margin-right: 11px;
+}
+.alice-carousel__dots-item:not(.__custom) {
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #ff0000;
+}
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  color: #ff0000;
+}
+
+.once-alice {
+  position: absolute;
+  top: 47vh;
+  width: 100%;
+}
+
+.about::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(/src/Assets/about/fender.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10vh;
+  opacity: 0.79;
+}
+
+.text {
+  color: $lightColor;
+  padding-top: 9vh;
+  text-align: center;
+  font-size: 3vh;
+  letter-spacing: 4px;
+  width: 100%;
+  height: 42%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.center {
+  letter-spacing: 8vw;
+  font-size: 2vh;
+  text-transform: uppercase;
+  opacity: 0.47;
+  font-weight: bold;
+  margin-left: 4%;
+}
+
+.once {
+  height: 1%;
+}
