@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import NumberFormat from "react-number-format";
 import { Link } from "react-router-dom";
-import Ticker from "react-ticker";
-import { Fragment } from "react/cjs/react.production.min";
+// import Ticker from "react-ticker";
+import Particles from "react-particles-js";
 import Info from "./Info";
 
 const Home = () => {
@@ -23,7 +23,7 @@ const Home = () => {
   }, [counter]);
 
   return (
-    <Fragment>
+    <>
       <div className="home">
         <div className="links">
           <Link to="about" className="me">
@@ -36,11 +36,30 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="star-container">
-          <div className="cross"></div>
-        </div>
+        <Particles
+          className="particles-container"
+          params={{
+            // fps_limit: 200,
+            particles: {
+              number: { value: 115 },
+              size: { value: 2 },
+              move: { speed: 1 },
+            },
+            interactivity: {
+              detect_on: "canvas",
+              events: {
+                onhover: {
+                  enable: true,
+                },
+                resize: false,
+              },
+            },
+          }}
+        />
 
-        <div className="line">
+        {/* <Particles className="particles-container" /> */}
+
+        {/* <div className="line">
           <Ticker speed={8}>
             {({ index }) => (
               <p style={{ color: "whitesmoke" }}>
@@ -51,7 +70,7 @@ const Home = () => {
               </p>
             )}
           </Ticker>
-        </div>
+        </div> */}
 
         <div className="days">
           <NumberFormat
@@ -64,7 +83,7 @@ const Home = () => {
       </div>
 
       <Info />
-    </Fragment>
+    </>
   );
 };
 

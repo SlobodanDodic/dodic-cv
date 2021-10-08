@@ -14,20 +14,20 @@
   }
 }
 
-.info-div::after {
-  content: "";
-  width: 11%;
-  height: 11%;
-  position: absolute;
-  top: 110%;
-  left: 5%;
-  filter: brightness(0.5);
-  opacity: 0.19;
-  background-image: url(/src/Assets/favicon.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 11;
-}
+// .info-div::after {
+//   content: "";
+//   width: 11%;
+//   height: 11%;
+//   position: absolute;
+//   top: 110%;
+//   left: 5%;
+//   filter: brightness(0.5);
+//   opacity: 0.19;
+//   background-image: url(/src/Assets/favicon.png);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   z-index: 11;
+// }
 
 .info-red {
   display: flex;
