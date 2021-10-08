@@ -82,31 +82,15 @@
   }
 }
 
-////////////////// Text line ////////////////////////
-
-.line {
-  width: 100vw;
-  height: 27px;
-  background-color: $darkColor;
-  top: 45vh;
-  left: 0;
-  position: absolute;
-  border-top: 3px solid $redColor;
-  border-bottom: 3px solid $redColor;
-  z-index: -1;
-  overflow: hidden;
-  font-size: 17px;
-}
-
 ///////////////////////////////// DOD /////////////////////////////////
 
 .particles-container {
-  height: 55vh;
-  width: 55vw;
-  min-width: 295px;
+  height: 50vh;
+  width: 50vw;
+  min-width: 285px;
   margin: 0vh auto;
   position: relative;
-  top: 22vh;
+  top: 25vh;
   clip-path: circle(50% at 50% 50%);
 }
 
@@ -129,14 +113,38 @@
 .days {
   color: $darkColor;
   position: absolute;
-  bottom: 6vh;
+  top: 82vh;
   width: 100vw;
   text-align: center;
   font-size: 7vh;
   letter-spacing: 7px;
   font-family: "Uncial Antiqua", cursive;
   text-shadow: 1px 1px 1px #969696, 1px 1px 4px #aba8a8;
+  // border-top: 1px solid #ff000038;
+  // border-bottom: 3px double #ff000040;
+  padding-bottom: 14px;
   p {
     font-size: 2.5vh;
   }
+  .numbers {
+    background-color: #1d1d1d70;
+    padding: 0 14px;
+    border-radius: 60px;
+  }
+}
+
+////////////////// Text line ////////////////////////
+
+.line {
+  width: 90vw;
+  height: 27px;
+  background-color: $darkColor;
+  top: 86vh;
+  left: 5vw;
+  position: absolute;
+  border-top: 4px double $redColor;
+  border-bottom: 4px double $redColor;
+  z-index: -1;
+  overflow: hidden;
+  font-size: 17px;
 }

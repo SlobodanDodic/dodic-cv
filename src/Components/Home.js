@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NumberFormat from "react-number-format";
 import { Link } from "react-router-dom";
-// import Ticker from "react-ticker";
+import Ticker from "react-ticker";
 import Particles from "react-particles-js";
 import Info from "./Info";
 
@@ -41,7 +41,7 @@ const Home = () => {
           params={{
             // fps_limit: 200,
             particles: {
-              number: { value: 115 },
+              number: { value: 75 },
               size: { value: 2 },
               move: { speed: 1 },
             },
@@ -57,23 +57,19 @@ const Home = () => {
           }}
         />
 
-        {/* <Particles className="particles-container" /> */}
-
-        {/* <div className="line">
-          <Ticker speed={8}>
+        <div className="line">
+          <Ticker speed={3}>
             {({ index }) => (
               <p style={{ color: "whitesmoke" }}>
-                Ticking away the moments that make up a dull day / Fritter and
-                waste the hours in an offhand way / Kicking around on a piece of
-                ground in your hometown. / Waiting for someone or something to
-                show you the way /
+                The sun is the same in a relative way but you're older. . .
               </p>
             )}
           </Ticker>
-        </div> */}
+        </div>
 
         <div className="days">
           <NumberFormat
+            className="numbers"
             value={Math.round(diffDays)}
             displayType={"text"}
             format="##.####"
