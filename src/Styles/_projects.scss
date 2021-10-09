@@ -154,3 +154,11 @@
   width: fit-content;
   margin: 0 auto;
 }
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}

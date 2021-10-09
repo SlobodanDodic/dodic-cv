@@ -39,7 +39,15 @@ const Projects = () => {
                   List, Firebase Authentication, Firestore Database, Storage &
                   Realtime Database
                 </p>
-                <button className="flip-box-button">Learn More</button>
+                <button className="flip-box-button">
+                  <a
+                    href="https://github.com/SlobodanDodic/firebase-app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Learn More
+                  </a>
+                </button>
               </div>
             </div>
           </div>
@@ -59,7 +67,15 @@ const Projects = () => {
                   <strong>Mamarijum</strong> <br />
                   An app for tracking recommended weight gain during pregnancy
                 </p>
-                <button className="flip-box-button">Learn More</button>
+                <button className="flip-box-button">
+                  <a
+                    href="https://github.com/SlobodanDodic/MTT"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Learn More
+                  </a>
+                </button>
               </div>
             </div>
           </div>
@@ -80,7 +96,15 @@ const Projects = () => {
                   Website made for my cousin. He wanted a website for his
                   apartments in our hometown Sombor.
                 </p>
-                <button className="flip-box-button">Visit Website ➔</button>
+                <button className="flip-box-button">
+                  <a
+                    href="https://www.sombor19.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Visit Website ➔
+                  </a>
+                </button>
               </div>
             </div>
           </div>
@@ -101,7 +125,15 @@ const Projects = () => {
                   Website made for my brother-in-law. He wanted a website for
                   his driving school, located in Sombor.
                 </p>
-                <button className="flip-box-button">Visit Website ➔</button>
+                <button className="flip-box-button">
+                  <a
+                    href="https://www.autoskolalteam.rs/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Visit Website ➔
+                  </a>
+                </button>
               </div>
             </div>
           </div>
