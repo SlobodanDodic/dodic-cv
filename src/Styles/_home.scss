@@ -82,7 +82,7 @@
   }
 }
 
-///////////////////////////////// DOD /////////////////////////////////
+////////////////////////////// Particles ///////////////////////////////
 
 .particles-container {
   height: 50vh;
@@ -96,11 +96,11 @@
 
 .particles-container::before {
   content: "";
-  width: 100%;
+  width: 39%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 32%;
   background: url(/src/Assets/homeOff.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -108,7 +108,7 @@
   z-index: 1;
 }
 
-///////////////////// Days ///////////////////////////
+////////////////////////////// Days ///////////////////////////////////
 
 .days {
   color: $darkColor;

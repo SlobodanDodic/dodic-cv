@@ -2,86 +2,171 @@
 
 .about {
   height: 100vh;
-  img {
-    width: 41vh;
-    margin: 2% auto;
-    display: block;
-  }
-}
-
-.alice-carousel {
-  position: absolute;
-  top: 15vh;
-  width: 100%;
-}
-.alice-carousel__dots {
-  margin: 0px;
-}
-.alice-carousel__prev-btn,
-.alice-carousel__next-btn {
-  padding: 0px;
-}
-.alice-carousel__dots-item:not(.__custom):not(:last-child) {
-  margin-right: 11px;
-}
-.alice-carousel__dots-item:not(.__custom) {
-  width: 5px;
-  height: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-.alice-carousel__dots-item:not(.__custom):hover,
-.alice-carousel__dots-item:not(.__custom).__active {
-  background-color: #ff0000;
-}
-.alice-carousel__prev-btn-item,
-.alice-carousel__next-btn-item {
-  color: #ff0000;
-}
-
-.once-alice {
-  position: absolute;
-  top: 47vh;
-  width: 100%;
 }
 
 .about::before {
   content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
+  opacity: 0.19;
   background: url(/src/Assets/about/fender.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10vh;
-  opacity: 0.79;
+  background-size: 3vh;
 }
 
-.text {
-  color: $lightColor;
-  padding-top: 9vh;
-  text-align: center;
-  font-size: 3vh;
-  letter-spacing: 4px;
-  width: 100%;
-  height: 42%;
-  flex-direction: row;
+/////////////////// Honecomb gallery ///////////////////
+
+$hexagon-width: 250px;
+$hexagon-height: $hexagon-width * 0.55;
+$hexagon-margin: 25px;
+$hexagon-title-color: $redColor;
+$hexagon-border-color: #b9b9b9bb;
+$hexagon-border-color--hover: $redColor;
+$hexagon-image-color: $darkColor;
+$honeycomb-max-width: 1200px;
+$viewport-thereshold: $hexagon-width + $hexagon-margin;
+
+.honeycomb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
+  max-width: $honeycomb-max-width;
+  margin: 0 auto;
+  padding-top: 5vh;
+  transform: translateY(#{$hexagon-height/4});
+
+  &-cell {
+    flex: 0 1 $hexagon-width;
+    max-width: $hexagon-width;
+    height: $hexagon-height;
+    margin: $hexagon-height/2.1 $hexagon-margin/2 $hexagon-margin;
+    position: relative;
+    padding: 0.5em;
+    text-align: center;
+    z-index: 1;
+
+    &__title {
+      color: $lightColor;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      word-break: break-word;
+      font-size: 2em;
+      transition: opacity 350ms;
+
+      > small {
+        font-size: 2vh;
+      }
+    }
+
+    &__image {
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    &::before,
+    &::after,
+    &__image {
+      top: -50%;
+      left: 0;
+      width: 100%;
+      height: 200%;
+      display: block;
+      position: absolute;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      z-index: -1;
+    }
+
+    &::before {
+      background: $hexagon-border-color;
+      transform: scale(1.055);
+    }
+
+    &::after {
+      background: $hexagon-image-color;
+      opacity: 0.79;
+      transition: opacity 350ms;
+    }
+
+    &:hover {
+      .honeycomb-cell__title {
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      &::before {
+        background: $hexagon-border-color--hover;
+      }
+
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__placeholder {
+    display: none;
+    opacity: 0;
+    width: $hexagon-width;
+    margin: 0 $hexagon-margin/2;
+  }
 }
 
-.center {
-  letter-spacing: 8vw;
-  font-size: 2vh;
-  text-transform: uppercase;
-  opacity: 0.47;
-  font-weight: bold;
-  margin-left: 4%;
+@media (max-width:#{2*$viewport-thereshold}) {
+  .honeycomb-cell {
+    margin: #{$hexagon-margin/2 + $hexagon-height/2} $hexagon-margin;
+  }
 }
 
-.once {
-  height: 1%;
+@media (min-width: #{2*$viewport-thereshold}) and (max-width:#{3*$viewport-thereshold}) {
+  .honeycomb-cell:nth-child(3n) {
+    margin-right: calc(50% - #{$hexagon-width/2});
+    margin-left: calc(50% - #{$hexagon-width/2});
+  }
+
+  .honeycomb__placeholder:nth-child(3n + 5) {
+    display: block;
+  }
+}
+
+@media (min-width: #{3*$viewport-thereshold}) and (max-width:#{4*$viewport-thereshold}) {
+  .honeycomb-cell:nth-child(5n + 4) {
+    margin-left: calc(50% - #{$hexagon-width + $hexagon-margin});
+  }
+
+  .honeycomb-cell:nth-child(5n + 5) {
+    margin-right: calc(50% - #{$hexagon-width + $hexagon-margin});
+  }
+
+  .honeycomb__placeholder:nth-child(5n),
+  .honeycomb__placeholder:nth-child(5n + 3) {
+    display: block;
+  }
+}
+
+@media (min-width: #{4*$viewport-thereshold}) {
+  .honeycomb-cell:nth-child(7n + 5) {
+    margin-left: calc(50% - #{$hexagon-width * 1.5 + $hexagon-margin});
+  }
+
+  .honeycomb-cell:nth-child(7n + 7),
+  .honeycomb-cell:nth-child(7n + 5):nth-last-child(2) {
+    margin-right: calc(50% - #{$hexagon-width * 1.5 + $hexagon-margin});
+  }
+
+  .honeycomb__placeholder:nth-child(7n + 7),
+  .honeycomb__placeholder:nth-child(7n + 9),
+  .honeycomb__placeholder:nth-child(7n + 11) {
+    display: block;
+  }
 }

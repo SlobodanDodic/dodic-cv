@@ -2,13 +2,13 @@
 
 .work-page {
   height: 100vh;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .work-text {
   color: $lightColor;
-  padding: 9vh 2vw;
+  padding: 8vh 15px 2vw;
   text-align: center;
   font-size: 2vh;
   max-width: 400px;
@@ -16,171 +16,141 @@
   letter-spacing: 1px;
 }
 
-.wrap {
-  position: relative;
-  width: 80vmin;
-  height: 80vmin;
-  margin: -16% auto;
-  background: inherit;
-  transform: scale(0.2) translatez(0px);
-  opacity: 0;
-  transition: transform 0.5s, opacity 0.5s;
+.text-center {
+  text-align: center;
 }
-.menu-project {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 47.5%;
-  height: 47.5%;
-  overflow: hidden;
-  transform: scale(0.5) translateZ(0px);
-  background: #585247;
+
+.color-white {
+  color: $lightColor;
 }
-.menu-project div {
-  height: 100%;
-  background-size: cover;
-  opacity: 0.5;
-  transition: opacity 0.5s;
-  border-radius: inherit;
-}
-.menu-project:nth-child(1) {
-  border-radius: 40vmin 0 0 0;
-  transform-origin: 110% 110%;
-  transition: transform 0.4s 0.15s;
-}
-.menu-project:nth-child(1) div {
-  background-image: url(/src/Assets/works/Nick.jpg);
-  background-size: contain;
-}
-.menu-project:nth-child(2) {
-  border-radius: 0 40vmin 0 0;
-  left: 52.5%;
-  transform-origin: -10% 110%;
-  transition: transform 0.4s 0.2s;
-}
-.menu-project:nth-child(2) div {
-  background-image: url(/src/Assets/works/Nirvana.jpg);
-  background-size: contain;
-}
-.menu-project:nth-child(3) {
-  border-radius: 0 0 0 40vmin;
-  top: 52.5%;
-  transform-origin: 110% -10%;
-  transition: transform 0.4s 0.25s;
-}
-.menu-project:nth-child(3) div {
-  background-image: url(/src/Assets/works/Pink-Floyd.jpg);
-  background-size: contain;
-}
-.menu-project:nth-child(4) {
-  border-radius: 0 0 40vmin 0;
-  top: 52.5%;
-  left: 52.5%;
-  transform-origin: -10% -10%;
-  transition: transform 0.4s 0.3s;
-}
-.menu-project:nth-child(4) div {
-  background-image: url(/src/Assets/works/Tool.jpg);
-  background-size: contain;
-}
-.menu-project:nth-child(5) {
-  width: 55%;
-  height: 55%;
-  left: 22.5%;
-  top: 22.5%;
-  border-radius: 50vmin;
-  box-shadow: 0 0 0 5vmin $darkColor;
-  transform: scale(1);
-}
-.menu-project:nth-child(5) div {
-  background-image: url(/src/Assets/works/John-Frusciante.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.empty-wrap {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  top: 27vmin;
-  width: 10vmin;
-  height: 10vmin;
-  border-radius: 100%;
-  background-image: url(/src/Assets/icons/git-work.png);
-  background-position: center;
-  background-size: contain;
-  transform: translateZ(0px);
-  // z-index: 11;
-}
-.empty-wrap .empty-wrap {
-  position: absolute;
-  width: 60%;
-  height: 3px;
-  background: $darkColor;
-  left: 20%;
-  top: 50%;
-  border-radius: 0;
-  transform: translateZ(0px);
-  // z-index: 11;
-}
-.empty-wrap .empty-wrap :after,
-.empty-wrap .empty-wrap :before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -1.5vmin;
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
   width: 100%;
-  height: 100%;
-  background: inherit;
-}
-.empty-wrap .empty-wrap :after {
-  top: 1.5vmin;
-}
-.empty-wrap :hover + .wrap,
-.wrap:hover {
-  transform: scale(0.8) translateZ(0px);
-  opacity: 1;
-}
-.empty-wrap :hover + .wrap .menu-project,
-.wrap:hover .menu-project {
-  transform: scale(1) translatez(0px);
-}
-.menu-project:hover div {
-  opacity: 1;
-  transform: translatez(0px);
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-// .info-work-text {
-//   color: $lightColor;
-//   font-size: 2vh;
-//   letter-spacing: 1px;
-//   opacity: 0;
-//   transition-property: opacity;
-//   transition-duration: 0.75s;
-//   transition-delay: 0.5s;
-//   position: absolute;
-//   width: 100%;
-//   top: 24vh;
-//   text-align: center;
-// }
+@media screen and (min-width: 1380px) {
+  .box-container {
+    flex-direction: row;
+  }
+}
 
-// .up-text {
-//   position: absolute;
-//   content: "";
-//   top: 0vh;
-//   left: 0vw;
-//   background-color: #1d1d1d;
-//   width: 100%;
-// }
+.box-item {
+  position: relative;
+  backface-visibility: hidden;
+  width: 300px;
+  margin: 20px;
+  max-width: 100%;
+}
 
-// .down-text {
-//   position: absolute;
-//   content: "";
-//   top: 25vh;
-//   left: 0vw;
-//   background-color: #1d1d1d;
-//   width: 100%;
-// }
+.flip-box {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
 
-// .wrap:hover + .info-work-text {
-//   opacity: 1;
-// }
+.flip-box-front,
+.flip-box-back {
+  background-size: cover;
+  background-position: center;
+  border-radius: 35px;
+  min-height: 430px;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-front {
+  transform: rotateY(-180deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  filter: invert(1);
+}
+
+.flip-box:hover .flip-box-back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.flip-box .inner {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+}
+
+.flip-box-header {
+  font-size: 34px;
+}
+
+.flip-box p {
+  font-size: 18px;
+  line-height: 1.75em;
+  padding: 20px;
+  background-color: rgba(29, 29, 29, 0.82);
+  border-radius: 30px;
+  filter: invert(1);
+}
+
+.flip-box-img {
+  margin-top: 315px;
+  width: 115px;
+  margin-left: 55%;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.flip-box-button {
+  background-color: transparent;
+  border: 2px solid $lightColor;
+  border-radius: 2px;
+  color: $lightColor;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  filter: invert(1);
+}
+
+.lteam {
+  background-image: url(/src/Assets/work/lteam.jpg);
+}
+
+.apartments {
+  background-image: url(/src/Assets/work/apartments.jpg);
+}
+
+.mamarijum {
+  background-image: url(/src/Assets/work/mamarijum.jpg);
+}
+
+.firebase {
+  background-image: url(/src/Assets/work/firebase.jpg);
+}
+
+.git {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
