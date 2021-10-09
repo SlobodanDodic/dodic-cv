@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="music-text">
-        <h1>Music is an art!</h1>
+        <h1>I love music and guitars :)</h1>
         <p>...and that's pretty much all you need to know about me...</p>
       </div>
 
