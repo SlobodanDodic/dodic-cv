@@ -16,6 +16,16 @@
   background-size: 3vh;
 }
 
+.music-text {
+  padding-top: 8vh;
+  color: $lightColor;
+  text-align: center;
+  p {
+    padding-top: 7px;
+    color: #7b7b7b;
+  }
+}
+
 /////////////////// Honecomb gallery ///////////////////
 
 $hexagon-width: 250px;
@@ -36,7 +46,7 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
   align-items: center;
   max-width: $honeycomb-max-width;
   margin: 0 auto;
-  padding-top: 5vh;
+  padding-top: 1vh;
   transform: translateY(#{$hexagon-height/4});
 
   &-cell {

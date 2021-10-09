@@ -14,6 +14,11 @@ import toronado from "../Assets/about/guitars/toronado.jpg";
 const About = () => {
   return (
     <div className="about">
+      <div className="music-text">
+        <h1>Music is an art!</h1>
+        <p>...and that's pretty much all you need to know about me...</p>
+      </div>
+
       <ul className="honeycomb">
         <li className="honeycomb-cell">
           <img className="honeycomb-cell__image" src={fenderE} alt="gitara" />
