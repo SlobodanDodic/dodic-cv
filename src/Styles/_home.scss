@@ -97,7 +97,9 @@
 .particles-container::before {
   content: "";
   width: 39%;
+  min-width: 180px;
   height: 100%;
+  min-height: 475px;
   position: absolute;
   top: 0;
   left: 32%;

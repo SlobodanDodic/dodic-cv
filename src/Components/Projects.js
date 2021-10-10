@@ -1,6 +1,6 @@
 import React from "react";
 import git from "../Assets/icons/git-work.png";
-import arrow from "../Assets/icons/arrow2.png";
+import ProjectsMap from "./ProjectsAtom/ProjectsMap";
 
 const Projects = () => {
   return (
@@ -22,123 +22,7 @@ const Projects = () => {
         <img src={git} alt="" />
       </a>
 
-      <div className="box-container">
-        {/* First box */}
-        <div className="box-item">
-          <div className="flip-box">
-            <div className="flip-box-front text-center firebase">
-              <div className="inner color-white">
-                <img src={arrow} alt="" className="flip-box-img" />
-              </div>
-            </div>
-            <div className="flip-box-back text-center firebase">
-              <div className="inner color-white">
-                <p>
-                  <strong>Firestore App</strong> <br />
-                  Sign in, Sign up, Sign out, Fetch, Store User, CRUD Users
-                  List, Firebase Authentication, Firestore Database, Storage &
-                  Realtime Database
-                </p>
-                <button className="flip-box-button">
-                  <a
-                    href="https://github.com/SlobodanDodic/firebase-app"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Learn More
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Second box */}
-        <div className="box-item">
-          <div className="flip-box">
-            <div className="flip-box-front text-center mamarijum">
-              <div className="inner color-white">
-                <img src={arrow} alt="" className="flip-box-img" />
-              </div>
-            </div>
-            <div className="flip-box-back text-center mamarijum">
-              <div className="inner color-white">
-                <p>
-                  <strong>Mamarijum</strong> <br />
-                  An app for tracking recommended weight gain during pregnancy
-                </p>
-                <button className="flip-box-button">
-                  <a
-                    href="https://github.com/SlobodanDodic/MTT"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Learn More
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Third box */}
-        <div className="box-item">
-          <div className="flip-box">
-            <div className="flip-box-front text-center filter- apartments">
-              <div className="inner color-white">
-                <img src={arrow} alt="" className="flip-box-img" />
-              </div>
-            </div>
-            <div className="flip-box-back text-center apartments">
-              <div className="inner color-white">
-                <p>
-                  <strong>Apartments Sombor 19</strong> <br />
-                  Website made for my cousin. He wanted a website for his
-                  apartments in our hometown Sombor.
-                </p>
-                <button className="flip-box-button">
-                  <a
-                    href="https://www.sombor19.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visit Website ➔
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Fourth box */}
-        <div className="box-item">
-          <div className="flip-box">
-            <div className="flip-box-front text-center lteam">
-              <div className="inner color-white">
-                <img src={arrow} alt="" className="flip-box-img" />
-              </div>
-            </div>
-            <div className="flip-box-back text-center lteam">
-              <div className="inner color-white">
-                <p>
-                  <strong>Driving school L Team Sombor</strong> <br />
-                  Website made for my brother-in-law. He wanted a website for
-                  his driving school, located in Sombor.
-                </p>
-                <button className="flip-box-button">
-                  <a
-                    href="https://www.autoskolalteam.rs/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Visit Website ➔
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ProjectsMap />
     </div>
   );
 };

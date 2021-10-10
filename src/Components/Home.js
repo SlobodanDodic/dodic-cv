@@ -26,7 +26,7 @@ const Home = () => {
     <>
       <div className="home">
         <div className="links">
-          <Link to="about" className="me">
+          <Link to="/about" className="me">
             About me
             <span></span>
           </Link>

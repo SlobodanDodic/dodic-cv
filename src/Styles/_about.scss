@@ -16,6 +16,8 @@
   background-size: 3vh;
 }
 
+/////////////////// Text Up & Down ///////////////////
+
 .music-text {
   padding-top: 8vh;
   color: $lightColor;
@@ -23,6 +25,22 @@
   p {
     padding-top: 7px;
     color: #7b7b7b;
+  }
+}
+
+.songs-text {
+  padding: 14vh 0vw 2vw;
+  color: #cfcfcf;
+  text-align: center;
+}
+
+.headphones-icon {
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  justify-content: space-evenly;
+  img {
+    width: 100px;
   }
 }
 
@@ -58,6 +76,7 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
     padding: 0.5em;
     text-align: center;
     z-index: 1;
+    cursor: pointer;
 
     &__title {
       color: $lightColor;

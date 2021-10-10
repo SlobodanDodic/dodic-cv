@@ -1,6 +1,6 @@
 import React from "react";
 
-const CircleMenu = () => {
+const Songs = () => {
   return (
     <div className="work-page">
       <div className="work-text">
@@ -54,22 +54,12 @@ const CircleMenu = () => {
           <div></div>
         </a>
         {/* main cirlce */}
-        <a
-          className="menu-project"
-          href="https://github.com/SlobodanDodic?tab=repositories"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <span className="menu-project">
           <div></div>
-        </a>
+        </span>
       </div>
-
-      {/* <div className="info-work-text">
-        <p className="up-text">Firebase MTT</p>
-        <p className="down-text">lteam sombor19</p>
-      </div> */}
     </div>
   );
 };
 
-export default CircleMenu;
+export default Songs;

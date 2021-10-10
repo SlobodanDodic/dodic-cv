@@ -1,0 +1,38 @@
+export const ProjectsData = [
+  {
+    id: 1,
+    title: "Firebase App",
+    text: "Sign in, Sign up, Sign out, Fetch, Store User, CRUD Users List,Firebase Authentication, Firestore Database, Storage & Realtime Database",
+    className: "firebase",
+    href: "https://github.com/SlobodanDodic/firebase-app",
+    button: "Learn more",
+    arrow: require("../../Assets/icons/arrow.png").default,
+  },
+  {
+    id: 2,
+    title: "Mamarijum App",
+    text: "An app for tracking recommended weight gain during pregnancy",
+    className: "mamarijum",
+    href: "https://github.com/SlobodanDodic/MTT",
+    button: "Learn more",
+    arrow: require("../../Assets/icons/arrow.png").default,
+  },
+  {
+    id: 3,
+    title: "Apartments Sombor 19",
+    text: "Website made for my cousin. He wanted a website for his apartments in our hometown Sombor.",
+    className: "apartments",
+    href: "https://www.sombor19.com/",
+    button: "Visit website",
+    arrow: require("../../Assets/icons/arrow.png").default,
+  },
+  {
+    id: 4,
+    title: "Driving school L Team Sombor",
+    text: "Website made for my brother-in-law. He wanted a website for his driving school, located in Sombor.",
+    className: "lteam",
+    href: "https://www.autoskolalteam.rs/",
+    button: "Visit website",
+    arrow: require("../../Assets/icons/arrow.png").default,
+  },
+];
