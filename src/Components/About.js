@@ -1,7 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import GuitarsMap from "./AboutAtoms/GuitarsMap";
-import headphones from "../Assets/about/headphones.png";
+// import { Link } from "react-router-dom";
+// import headphones from "../Assets/about/headphones.png";
 
 const About = () => {
   return (
