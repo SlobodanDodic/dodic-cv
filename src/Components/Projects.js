@@ -1,5 +1,5 @@
 import React from "react";
-import git from "../Assets/icons/git-work.png";
+import git from "../Assets/icons/git.png";
 import ProjectsMap from "./ProjectsAtom/ProjectsMap";
 
 const Projects = () => {

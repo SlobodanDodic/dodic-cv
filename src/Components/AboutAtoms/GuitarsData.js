@@ -69,4 +69,11 @@ export const GuitarsData = [
     src: require("../../Assets/about/guitars/fender1.jpg").default,
     isSold: "sold",
   },
+  {
+    id: 11,
+    title: "Soundsation SG",
+    small: "Gibson SG/G400",
+    src: require("../../Assets/about/guitars/sg.jpg").default,
+    isSold: "sold",
+  },
 ];

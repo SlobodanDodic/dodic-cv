@@ -14,8 +14,8 @@ const About = () => {
       <GuitarsMap />
 
       {/* <div className="songs-text">
-        <h1>Click to listen</h1>
-        <p>some of my guitar ideas</p>
+        <h1>Click the headphones</h1>
+        <p style={{ color: "#cd0000" }}>to listen some music</p>
       </div>
 
       <div className="headphones-icon">
