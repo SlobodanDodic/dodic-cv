@@ -25,17 +25,19 @@
   color: $lightColor;
   text-align: center;
   p {
-    padding: 10px;
+    padding: 14px;
     color: #7b7b7b;
   }
 }
 .lyrics {
-  font-family: $monoFont;
-  color: $lightColor;
+  color: #ffffff;
   text-align: center;
-  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.25;
   font-style: italic;
-  font-weight: 100;
+  small {
+    color: #ffff009c;
+  }
 }
 
 .songs-text {

@@ -11,11 +11,11 @@ const About = () => {
         <p>...and that's pretty much all you need to know about me...</p>
       </div>
       <div className="lyrics">
-        <h3>"Oh my God!</h3>
-        <h3>What a fabulous honeycomb gallery!</h3>
-        <h3>Are all these your guitars?</h3>
-        <h3>This gallery is bigger than our apartment!"</h3>
-        <small>slightly altered words by ROGER WATERS</small>
+        <h4>"Oh my God!</h4>
+        <h4>What a fabulous gallery!</h4>
+        <h4>Are all these your guitars?</h4>
+        <h4>This gallery is bigger than our apartment!"</h4>
+        <small>by ROGER WATERS</small>
       </div>
 
       <GuitarsMap />
