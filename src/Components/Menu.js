@@ -36,9 +36,7 @@ function Menu() {
           <Link to="/about" className="menu-item">
             <div className="menu-item__title">About Me</div>
             <div className="menu-item__background" />
-            <div className="menu-item__subtitle">
-              nothing special about me MF
-            </div>
+            <div className="menu-item__subtitle">nothing special about me</div>
           </Link>
         </div>
       </div>

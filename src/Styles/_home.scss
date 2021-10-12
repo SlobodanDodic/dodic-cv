@@ -96,13 +96,11 @@
 
 .particles-container::before {
   content: "";
-  width: 39%;
   min-width: 180px;
   height: 100%;
-  min-height: 475px;
   position: absolute;
-  top: 0;
-  left: 32%;
+  top: 2vh;
+  left: 19vw;
   background: url(/src/Assets/homeOff.png);
   background-repeat: no-repeat;
   background-position: center center;
