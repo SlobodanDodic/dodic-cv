@@ -7,13 +7,15 @@
 .about::before {
   content: "";
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   position: fixed;
-  top: 0;
+  top: 5vh;
   left: 0;
-  opacity: 0.19;
+  opacity: 0.14;
   background: url(/src/Assets/about/fender.png);
-  background-size: 3vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /////////////////// Text Up & Down ///////////////////
@@ -23,9 +25,17 @@
   color: $lightColor;
   text-align: center;
   p {
-    padding-top: 7px;
+    padding: 10px;
     color: #7b7b7b;
   }
+}
+.lyrics {
+  font-family: $monoFont;
+  color: $lightColor;
+  text-align: center;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 100;
 }
 
 .songs-text {
@@ -77,6 +87,10 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
     text-align: center;
     z-index: 1;
     cursor: pointer;
+    // &:hover{
+    //   animation: fadein 5s linear 1 normal forwards;
+    //   cursor: pointer;
+    // }
 
     &__title {
       color: $lightColor;
@@ -130,7 +144,6 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
     &:hover {
       .honeycomb-cell__title {
         opacity: 0;
-        cursor: pointer;
       }
 
       &::before {
@@ -138,7 +151,7 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
       }
 
       &::after {
-        opacity: 0;
+        animation: fadein 2s linear 1 normal forwards;
       }
     }
   }
@@ -148,6 +161,15 @@ $viewport-thereshold: $hexagon-width + $hexagon-margin;
     opacity: 0;
     width: $hexagon-width;
     margin: 0 $hexagon-margin/2;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0.79;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
