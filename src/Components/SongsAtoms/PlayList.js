@@ -8,8 +8,8 @@ const PlayList = ({ tracks, selectedTrack, setSelectedTrack }) => {
           key={track.id}
           className={
             track.id === selectedTrack.id
-              ? "playlist-item selected"
-              : "playlist-item"
+              ? "playlist-item"
+              : "playlist-item selected"
           }
           onClick={() => setSelectedTrack(track)}
         >
