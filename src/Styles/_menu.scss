@@ -125,8 +125,8 @@
   margin-left: calc(50% - 120px);
   transition: 0.45s all ease-in-out;
   background-image: linear-gradient(to right, #1a1a1a, #5b5b5b82);
-  border: 1px solid $lightColor;
-  border-radius: 8px 39px;
+  border: 1px dotted $lightColor;
+  border-radius: 0px 21rem 0px 0px;
 }
 .menu-item:hover > .menu-item__background {
   width: 240px;

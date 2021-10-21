@@ -29,6 +29,7 @@ export default function Waveform({ url }) {
     wavesurfer.current = WaveSurfer.create(options);
 
     wavesurfer.current.load(url);
+
     return () => wavesurfer.current.destroy();
   }, [url]);
 
@@ -39,10 +40,6 @@ export default function Waveform({ url }) {
 
   return (
     <div>
-      <div style={{ color: "white", fontSize: "22px" }}>
-        Click on play button
-      </div>
-
       <div id="waveform" ref={waveformRef} />
       <div className="controls">
         <button onClick={handlePlayPause}>{!playing ? "Play" : "Pause"}</button>

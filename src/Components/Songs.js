@@ -27,7 +27,9 @@ const Songs = () => {
       <div className="div-player">
         <Waveform url={selectedTrack.url} />
         <br />
-        <div className="playlist-text">playList (click on title):</div>
+        <div className="playlist-text">
+          &#60; playList (click on title) &#47;&#62;
+        </div>
         <PlayList
           tracks={tracks}
           selectedTrack={selectedTrack}

@@ -80,26 +80,26 @@
     font-size: 2vh;
     .playlist-text {
       color: $lightColor;
-      padding-bottom: 14px;
-      letter-spacing: 4px;
+      padding: 5px;
+      font-style: italic;
     }
     .controls {
       padding-top: 5px;
       button {
         display: block;
-        margin: 15px auto;
-        padding: 3px 21px;
-        letter-spacing: 1px;
+        margin: 10px auto;
+        padding: 6px 29px;
+        letter-spacing: 3px;
         font-family: $regularFont;
         border-radius: 2px;
         background-color: darkred;
         font-weight: bold;
         color: $darkColor;
-        border: 1px solid $darkColor;
+        border: 2px solid $darkColor;
         &:hover {
           cursor: pointer;
           color: $lightColor;
-          border: 1px solid $lightColor;
+          border: 2px solid $lightColor;
         }
       }
       label {
