@@ -14,10 +14,30 @@ const GuitarsMap = () => {
             />
             <div className="honeycomb-cell__title">
               {item.title}
+
               <small>{item.small}</small>
-              <small style={{ color: "red", fontSize: "0.75rem" }}>
-                {item.isSold}
-              </small>
+
+              {item.isSold ? (
+                <small
+                  style={{
+                    color: "red",
+                    fontSize: "0.95rem",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  sold
+                </small>
+              ) : (
+                <small
+                  style={{
+                    color: "lime",
+                    fontSize: "0.95rem",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  still mine
+                </small>
+              )}
             </div>
           </li>
         );
