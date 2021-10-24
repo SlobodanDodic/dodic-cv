@@ -1,7 +1,7 @@
 import React from "react";
-import GuitarsMap from "./AboutAtoms/GuitarsMap";
+import GuitarsMap from "./GuitarsMap";
 import { Link } from "react-router-dom";
-import headphones from "../Assets/about/headphones.png";
+import headphones from "../../Assets/about/headphones.png";
 
 const About = () => {
   return (
@@ -22,11 +22,13 @@ const About = () => {
 
       <div className="songs-text">
         <h1>Click the headphones</h1>
-        <p style={{ color: "#cd0000" }}>to listen some music</p>
+        <p style={{ color: "#cd0000", letterSpacing: "1px", padding: "2px" }}>
+          And if you pass the test, listen to my music!
+        </p>
       </div>
 
       <div className="headphones-icon">
-        <Link to="/songs">
+        <Link to="/quiz">
           <img src={headphones} alt="headphones" />
         </Link>
       </div>

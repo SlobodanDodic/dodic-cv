@@ -1,10 +1,10 @@
-@import "_about.scss";
-@import "_menu.scss";
-@import "_home.scss";
-@import "_info.scss";
-@import "_navbar.scss";
-@import "_projects.scss";
-@import "_songs.scss";
+@import "../Components/AboutAtoms/about";
+@import "../Components/MenuAndNavbar/menuAndBar";
+@import "../Components/LandingPages/home";
+@import "../Components/LandingPages/info";
+@import "../Components/ProjectsAtom/projects";
+@import "../Components/SongsAtoms/songs";
+@import "../Components/Quiz/quiz";
 @import "_vars.scss";
 
 * {

@@ -1,8 +1,8 @@
 import React from "react";
-import html from "../Assets/icons/html.png";
-import css from "../Assets/icons/css.png";
-import react from "../Assets/icons/react.png";
-import git from "../Assets/icons/git.png";
+import html from "../../Assets/icons/html.png";
+import css from "../../Assets/icons/css.png";
+import react from "../../Assets/icons/react.png";
+import git from "../../Assets/icons/git.png";
 
 const Info = () => {
   return (

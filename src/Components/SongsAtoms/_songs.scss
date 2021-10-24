@@ -1,4 +1,4 @@
-@import "_vars.scss";
+@import "../../Styles/vars";
 
 .work-page {
   height: 100vh;
@@ -129,9 +129,6 @@
           cursor: pointer;
         }
       }
-      // .tale {
-      //   font-size: 1.55vh;
-      // }
     }
   }
 }

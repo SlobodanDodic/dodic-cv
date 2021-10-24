@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PlayList from "./SongsAtoms/PlayList";
-import Waveform from "./SongsAtoms/Waveform";
-import { tracks } from "../Components/SongsAtoms/SongsData";
+import PlayList from "./PlayList";
+import Waveform from "./Waveform";
+import { tracks } from "./SongsData";
 
 const Songs = () => {
   const [selectedTrack, setSelectedTrack] = useState(tracks[0]);

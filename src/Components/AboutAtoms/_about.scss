@@ -1,4 +1,4 @@
-@import "_vars.scss";
+@import "../../Styles/vars";
 
 .about {
   height: 100vh;
@@ -26,23 +26,23 @@
   text-align: center;
   p {
     padding: 14px;
-    color: #7b7b7b;
+    color: $greyColor;
   }
 }
 .lyrics {
-  color: #ffffff;
+  color: $lightColor;
   text-align: center;
   letter-spacing: 1px;
   line-height: 1.25;
   font-style: italic;
   small {
-    color: #ffff009c;
+    color: $greyColor;
   }
 }
 
 .songs-text {
-  padding: 14vh 0vw 2vw;
-  color: #cfcfcf;
+  padding: 14vh 0vw 1vw;
+  color: $lightColor;
   text-align: center;
 }
 
@@ -52,7 +52,7 @@
   position: absolute;
   justify-content: space-evenly;
   img {
-    width: 100px;
+    width: 125px;
   }
 }
 
@@ -62,7 +62,7 @@ $hexagon-width: 250px;
 $hexagon-height: $hexagon-width * 0.55;
 $hexagon-margin: 25px;
 $hexagon-title-color: $redColor;
-$hexagon-border-color: #b9b9b9bb;
+$hexagon-border-color: $greyColor;
 $hexagon-border-color--hover: $redColor;
 $hexagon-image-color: $darkColor;
 $honeycomb-max-width: 1200px;

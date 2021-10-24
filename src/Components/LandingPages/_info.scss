@@ -1,11 +1,11 @@
-@import "_vars.scss";
+@import "../../Styles/vars";
 
 .info {
   height: 100vh;
   color: $lightColor;
   .text-down {
     position: absolute;
-    top: 144vh;
+    top: 141vh;
     font-size: 2vh;
     letter-spacing: 4px;
     text-align: end;
@@ -14,13 +14,13 @@
   }
   .div-icons {
     position: relative;
-    top: 70vh;
+    top: 62vh;
     width: 100vw;
     display: flex;
     align-items: flex-end;
     filter: drop-shadow(2px 4px 6px black);
     justify-content: space-evenly;
-    opacity: 0.75;
+    opacity: 0.85;
   }
 }
 

@@ -1,6 +1,6 @@
 import React from "react";
-import git from "../Assets/icons/git.png";
-import ProjectsMap from "./ProjectsAtom/ProjectsMap";
+import git from "../../Assets/icons/git.png";
+import ProjectsMap from "./ProjectsMap";
 
 const Projects = () => {
   return (
