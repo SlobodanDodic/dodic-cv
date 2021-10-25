@@ -2,19 +2,19 @@ export const questions = [
   {
     questionText: "What is the speed of light?",
     answerOptions: [
-      { answerText: "3.000 km/s", isCorrect: false },
-      { answerText: "30.000 km/s", isCorrect: false },
+      { answerText: "100 km/s", isCorrect: false },
+      { answerText: "20.000 km/s", isCorrect: false },
       { answerText: "300.000 km/s", isCorrect: true },
-      { answerText: "3.000.000 km/s", isCorrect: false },
+      { answerText: "40.000.000 km/s", isCorrect: false },
     ],
   },
   {
-    questionText: "The sun is the same in a relative way",
+    questionText: "Who is the best female vocalist of all time?",
     answerOptions: [
-      { answerText: "and that`s ok", isCorrect: false },
-      { answerText: "but you`re older", isCorrect: true },
-      { answerText: "and I`m not the same", isCorrect: false },
-      { answerText: "but who cares", isCorrect: false },
+      { answerText: "Lisa Hannigan", isCorrect: false },
+      { answerText: "Loreena Isabel McKennitt", isCorrect: true },
+      { answerText: "Nina Simone", isCorrect: false },
+      { answerText: "Sinéad O'Connor", isCorrect: false },
     ],
   },
   {
@@ -22,8 +22,8 @@ export const questions = [
     answerOptions: [
       { answerText: "Clarence Leonidas Fender", isCorrect: true },
       { answerText: "Orville H. Gibson", isCorrect: false },
-      { answerText: "Paul Reed Smith", isCorrect: false },
-      { answerText: "George William Fullerton", isCorrect: false },
+      { answerText: "Paul R. Smith", isCorrect: false },
+      { answerText: "George W. Fullerton", isCorrect: false },
     ],
   },
   {

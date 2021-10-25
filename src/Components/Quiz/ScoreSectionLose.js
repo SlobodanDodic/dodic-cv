@@ -12,7 +12,9 @@ export const ScoreSectionLose = ({ score, setCurrentQuestion }) => {
 
       <img src={Gandalf} alt="Gandalf" />
 
-      <p>You need at least 3 point to move forward!</p>
+      <p>
+        You need at least 3 point <br /> to move forward!
+      </p>
       <button className="reset-btn" onClick={() => setCurrentQuestion(0)}>
         Reset
       </button>
