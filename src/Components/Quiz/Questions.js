@@ -38,10 +38,10 @@ export const questions = [
   {
     questionText: "How many studio albums did Pink Floyd release?",
     answerOptions: [
-      { answerText: "12", isCorrect: false },
-      { answerText: "13", isCorrect: false },
-      { answerText: "14", isCorrect: false },
+      { answerText: "7", isCorrect: false },
+      { answerText: "10", isCorrect: false },
       { answerText: "15", isCorrect: true },
+      { answerText: "17", isCorrect: false },
     ],
   },
 ];
