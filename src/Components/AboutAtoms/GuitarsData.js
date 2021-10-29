@@ -100,7 +100,7 @@ export const GuitarsData = [
   {
     id: 15,
     title: "Boss Amp",
-    small: "Katana Air",
+    small: "Katana KTN-HEAD MK II",
     src: require("../../Assets/about/guitars/katana.jpg").default,
     isSold: false,
   },

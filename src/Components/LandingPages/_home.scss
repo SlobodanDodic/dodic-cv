@@ -193,22 +193,26 @@
   font-family: $amitaFont;
   .text-down {
     position: absolute;
-    top: 139vh;
-    font-size: 2vh;
+    top: 132vh;
+    font-size: 2.5vh;
     letter-spacing: 2px;
-    text-align: end;
+    text-align: center;
     max-width: 500px;
-    padding: 10px;
+    padding: 5px 15px;
   }
   .div-icons {
     position: relative;
-    top: 62vh;
+    top: 98vh;
     width: 100vw;
     display: flex;
     align-items: flex-end;
-    filter: drop-shadow(2px 4px 6px black);
+    filter: brightness(0.75);
     justify-content: space-evenly;
-    opacity: 0.85;
+    z-index: 1;
+    .front-icon {
+      width: 39px;
+      height: auto;
+    }
   }
 }
 
@@ -251,9 +255,4 @@
   position: absolute;
   background-color: $redColor;
   clip-path: polygon(100% 80%, -40% 100%, 100% 100%);
-}
-
-.front-icon {
-  width: 5vh;
-  margin-bottom: 5px;
 }
