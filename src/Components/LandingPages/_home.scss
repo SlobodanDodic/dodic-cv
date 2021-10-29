@@ -170,7 +170,7 @@
   width: 90vw;
   height: 40px;
   background-color: $darkColor;
-  bottom: 1vh;
+  top: 93vh;
   left: 5vw;
   position: absolute;
   border-top: 4px double $redColor;
@@ -190,14 +190,15 @@
 .info {
   height: 100vh;
   color: $lightColor;
+  font-family: $amitaFont;
   .text-down {
     position: absolute;
-    top: 141vh;
+    top: 139vh;
     font-size: 2vh;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: end;
     max-width: 500px;
-    padding: 14px;
+    padding: 10px;
   }
   .div-icons {
     position: relative;
