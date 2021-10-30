@@ -251,23 +251,23 @@
 }
 
 .bin-clock-root {
-  margin: 0px;
-  padding: 0px;
-  border: none;
-  border-radius: 0px;
+  margin: 0px !important;
+  padding: 0px !important;
+  border: none !important;
+  border-radius: 0px !important;
 }
 
 .bin-clock-bulb-off {
-  background: $redColor;
+  background: $redColor !important;
 }
 
 .bin-clock-bulb-on {
-  background: $greyColor;
+  background: $greyColor !important;
 }
 
 .bin-clock-bulb-base {
-  width: 3vh;
-  height: 3vh;
-  margin: 4px;
-  border-radius: 50%;
+  width: 3vh !important;
+  height: 3vh !important;
+  margin: 4px !important;
+  border-radius: 50% !important;
 }
