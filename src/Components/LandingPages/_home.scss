@@ -213,7 +213,7 @@
   height: 75%;
   position: absolute;
   background-color: $redColor;
-  clip-path: polygon(225% 0, 0 0, 0 30%);
+  clip-path: polygon(200% 0, 0 0, 0 30%);
 }
 
 .info-red::before {
@@ -222,7 +222,7 @@
   height: 100%;
   position: absolute;
   background-color: #2c2c2c;
-  clip-path: polygon(127% 0, 0 0, 0 20%);
+  clip-path: polygon(129% 0, 0 0, 0 21%);
 }
 
 .info::after {
@@ -231,7 +231,7 @@
   height: 100%;
   position: absolute;
   background-color: #2c2c2c;
-  clip-path: polygon(100% 89%, -90% 102%, 100% 100%);
+  clip-path: polygon(100% 87%, -50% 100%, 100% 100%);
 }
 
 .info-red::after {
