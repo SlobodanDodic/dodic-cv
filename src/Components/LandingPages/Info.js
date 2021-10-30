@@ -1,8 +1,5 @@
 import React from "react";
-import html from "../../Assets/icons/html.png";
-import css from "../../Assets/icons/css.png";
-import react from "../../Assets/icons/react.png";
-import git from "../../Assets/icons/git.png";
+import { BinaryClock } from "binary-clock-react";
 
 const Info = () => {
   return (
@@ -14,12 +11,7 @@ const Info = () => {
           JavaScript library React...
         </div>
 
-        <div className="div-icons">
-          <img className="front-icon" src={html} alt="html" />
-          <img className="front-icon" src={css} alt="css" />
-          <img className="front-icon" src={react} alt="react" />
-          <img className="front-icon" src={git} alt="git" />
-        </div>
+        <BinaryClock />
       </div>
     </div>
   );
