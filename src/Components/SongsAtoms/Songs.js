@@ -7,6 +7,8 @@ import { tracks } from "./SongsData";
 const Songs = () => {
   const [selectedTrack, setSelectedTrack] = useState(tracks[0]);
 
+  // console.log(selectedTrack.url);
+
   return (
     <div className="work-page">
       <div className="intro-block">

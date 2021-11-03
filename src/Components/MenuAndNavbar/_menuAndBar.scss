@@ -45,7 +45,7 @@
   border-radius: 2px;
   transition: 0.15s all ease-in-out;
   transform-origin: left;
-  background-image: linear-gradient(to left, #cd0000, $redColor);
+  background-image: linear-gradient(to left, #bb0000, $redColor);
 }
 .menu-icon > div:nth-of-type(2) {
   width: 55%;
@@ -96,7 +96,7 @@
   justify-content: center;
   transform-origin: center;
   transition: 0.1s all ease-in-out;
-  background-color: #0000005e;
+  background-color: #00000088;
   transform: scale(3);
   opacity: 0;
 }
@@ -120,13 +120,13 @@
   color: $lightColor;
 }
 .menu-item__subtitle {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  font-style: italic;
-  color: #cd0000;
-  border-top: 1px solid;
-  width: fit-content;
   margin: 0 auto;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #bb0000;
+  // border-top: 1px solid;
+  // width: fit-content;
 }
 .menu-item__background {
   z-index: 50;
@@ -136,8 +136,8 @@
   margin-bottom: 2px;
   margin-left: calc(50% - 120px);
   transition: 0.45s all ease-in-out;
-  background-image: linear-gradient(to right, #1a1a1a, #5b5b5b82);
-  border: 1px solid $redColor;
+  background-image: linear-gradient(to right, #000000, #272727);
+  border: 1px solid #bb0000;
   border-radius: 0px 21rem 0px 0px;
 }
 .menu-item:hover > .menu-item__background {
