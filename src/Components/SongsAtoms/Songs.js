@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ScaleLoader from "react-spinners/ScaleLoader";
 import PlayList from "./PlayList";
 import Waveform from "./Waveform";
 import { tracks } from "./SongsData";
@@ -24,18 +25,29 @@ const Songs = () => {
         </div>
       </div>
 
-      <div className="div-player">
-        <Waveform url={selectedTrack.url} />
-        <br />
-        <div className="playlist-text">
-          &#60; playList (click on title) &#47;&#62;
+      {selectedTrack.url ? (
+        <div className="div-player">
+          <Waveform url={selectedTrack.url} />
+          <br />
+          <div className="playlist-text">playlist (click on title):</div>
+          <PlayList
+            tracks={tracks}
+            selectedTrack={selectedTrack}
+            setSelectedTrack={setSelectedTrack}
+          />
         </div>
-        <PlayList
-          tracks={tracks}
-          selectedTrack={selectedTrack}
-          setSelectedTrack={setSelectedTrack}
-        />
-      </div>
+      ) : (
+        <div className="loader-container">
+          <h1>Loading...</h1>
+          <ScaleLoader
+            color="#858585"
+            height="95px"
+            width="7px"
+            radius={7}
+            margin={7}
+          />
+        </div>
+      )}
     </div>
   );
 };
