@@ -274,8 +274,10 @@
   .terminal {
     padding: 13px 15px;
     span {
-      font-style: italic;
-      color: $greyColor;
+      // font-style: italic;
+      // color: $greyColor;
+      color: $redColor;
+      filter: drop-shadow(0px 0px 1px $lightColor);
     }
   }
   span {
